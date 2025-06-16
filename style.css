@@ -1,0 +1,403 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  color: #002c6c;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffae00;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+}
+
+#sidebar {
+  transition: all 0.3s ease-in-out;
+}
+
+#main-content {
+  transition: all 0.3s ease-in-out;
+}
+.carousel-item-image {
+  position: relative;
+  overflow: hidden;
+  min-height: 600px;
+  z-index: 1;
+}
+
+.carousel-item-image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 90%;
+  background-image: url('./assets/img/Fondocut.png'); 
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+  opacity: 1;
+  z-index: -9999;
+}
+.carousel-indicators {
+    bottom: 123px;
+  left: 2rem;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 40px;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-indicators .active {
+  background-color: rgb(199, 199, 199);
+  width: 40px;
+  height: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+.contacto .man-image{
+          top: -16.5rem;
+}
+/* animacion */
+/* media query */
+@media (max-width: 319.98px) {
+.contacto .position-relative .container{
+  max-width: 100%;
+      flex-direction: column-reverse;
+}
+.contacto .man-image{
+      left: unset  !important;
+    max-width: 457px;
+    width: 100%;
+    top: -24rem;
+
+}
+.form-container{
+      z-index: 2;
+    position: relative;
+         top: 17rem;
+        right: 81px;
+
+}
+.form-container .rounded {
+      min-width: 275px;
+    max-width: 335px;
+}
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
+
+}
+
+
+}
+@media (min-width: 320px) and (max-width: 465px) {
+  .contacto{
+        max-height: 502px;
+  }
+.contacto .position-relative .container{
+  max-width: 100%;
+      flex-direction: column-reverse;
+}
+.contacto .man-image{
+      left: unset  !important;
+    max-width: 457px;
+    width: 100%;
+    top: -24rem;
+
+}
+.form-container{
+      z-index: 2;
+    position: relative;
+         top: 17rem;
+        right: 81px;
+
+}
+.form-container .rounded {
+      min-width: 275px!important;
+    max-width: 335px!important;
+}
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
+
+}
+
+ #internshipSlider .tab-btn-container{
+       margin-left: 0px !important;
+  }
+  .button-program{
+    display: flex;
+        justify-content: space-between !important;
+  }
+ 
+
+
+  .experiecia-cultura h5{
+        font-size: 1rem!important;
+    margin-bottom: 13px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+   .experiecia-cultura h5{
+        font-size: 1rem!important;
+    margin-bottom: 13px;
+  }
+      .experiecia-cultura .img-cultura{
+    width: 100%;
+  }
+    .experiecia-cultura h1{
+    font-size: 2.5rem!important;
+    margin-bottom: -9px!important;
+
+
+  }
+
+    .button-program{
+    display: flex;
+        justify-content: space-between !important;
+  }
+
+  .experiecia-cultura .img-cultura{
+    width: 100%;
+  }
+
+  .programa-entrevista-foto-responsive{
+display: unset!important;
+    width: 100%!important;
+    max-width: 700px!important;
+
+}
+ .programa-entrevista {
+    height: auto!important;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .programa-entrevista .text{
+     width: 100%!important;
+  }
+    .programa-entrevista .text-end{
+     text-align: center!important;
+  }
+  .cloud {
+    display: none!important;
+  }
+
+  
+}
+@media (min-width: 466px) and (max-width: 575.98px) {
+
+    .contacto{
+        max-height: 502px;
+  }
+.contacto .position-relative .container{
+  max-width: 100%;
+      flex-direction: column-reverse;
+}
+.contacto .man-image{
+      left: unset  !important;
+    max-width: 457px;
+    width: 100%;
+    top: -24rem;
+
+}
+.form-container{
+      z-index: 2;
+    position: relative;
+         top: 17rem;
+        right: 81px;
+
+}
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
+
+}
+
+
+.programa-entrevista-foto-responsive{
+display: unset!important;
+    max-width: 500px;
+    width: 100%;
+    height: 557px;
+        position: relative;
+    top: 16px;
+}
+
+.programa-entrevista .text{
+      width: 100%!important;
+    text-align: center;
+}
+ #internshipSlider .tab-btn-container{
+       margin-left: 0px !important;
+  }
+  .button-program{
+    display: flex;
+        justify-content: space-between !important;
+  }
+ 
+
+    .experiecia-cultura h5{
+        font-size: 1rem;
+    margin-bottom: 13px;
+  }
+}
+
+/* Teléfonos (≥576px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .contacto{
+        max-height: 502px;
+  }
+.contacto .man-image{
+           top: -26.9rem;
+      left: unset !important;
+        width: 100%;
+
+
+}
+.form-container{
+      z-index: 2;
+    position: relative;
+    top: 18rem;
+    right: 31px;
+}
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
+
+}
+.contacto .position-relative .container{
+  max-width: 100%;
+      flex-direction: column-reverse;
+}
+
+.programa-entrevista-foto-responsive{
+display: unset!important;
+    max-width: 500px;
+    width: 100%;
+    height: 557px;
+        position: relative;
+    top: 16px;
+}
+.programa-entrevista .text{
+      width: 100%!important;
+    text-align: center;
+}
+  #internshipSlider .tab-btn-container{
+       margin-left: 0px !important;
+  }
+  .button-program{
+    display: flex;
+        justify-content: space-between !important;
+  }
+
+ 
+    .experiecia-cultura h5{
+        font-size: 1rem;
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .contacto{
+        max-height: 502px;
+  }
+.contacto .man-image{
+           top: -26.9rem;
+
+    left: 7rem!important;
+
+}
+.form-container{
+      z-index: 2;
+    position: relative;
+    top: 18rem;
+    right: 31px;
+}
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
+
+}
+.contacto .position-relative .container{
+  max-width: 100%;
+      flex-direction: column-reverse;
+}
+.programa-entrevista .programa-entrevista-foto{
+   display: none!important;
+
+}
+
+.programa-entrevista .text{
+      width: 100%!important;
+    text-align: center;
+}
+ #internshipSlider .tab-btn-container{
+       margin-left: 0px !important;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.contacto .man-image{
+        top: -18.9rem;
+
+}
+.programa-entrevista .programa-entrevista-foto{
+    left: 28rem;
+
+}
+.programa-entrevista .container {
+  max-width: 100%;
+
+
+}
+.programa-entrevista .form-box{
+    max-width: 510px;
+
+}
+.programa-entrevista .text{
+      width: 100%!important;
+    text-align: center;
+}
+}
+
+/* Escritorio grande (≥1200px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+ .contacto .man-image{
+            top: -17.4rem;
+
+
+
+}    }
+
+/* Pantallas muy grandes (≥1400px) */
+@media (min-width: 1400px) {
+  /* 4K o monitores anchos */
+}
+.programa-entrevista-foto-responsive {
+display: none;
+}
+
+
+.resposive-button{
+  display: none;
+}
