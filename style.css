@@ -153,7 +153,13 @@ body {
   }
 
 }
+@media screen and (max-width: 992px) {
 
+.procesos-en-linea-firts{
+
+}
+
+}
 @media screen and (max-width: 992px) {
    .experiecia-cultura h5{
         font-size: 1rem!important;
@@ -198,8 +204,40 @@ display: unset!important;
   .cloud {
     display: none!important;
   }
+.procesos-linea .container-procesos-linea{
+          max-width: unset!important;
+          gap: 1rem!important;
 
-  
+}
+.procesos-linea{
+      padding-bottom: 1rem !important;
+
+}
+.procesos-en-linea-firts{
+
+}
+.procesos-en-linea-second{
+      height: 405px;
+
+
+}
+.english-forWork-container .text-container{
+width: 100%;
+
+}
+.english-forWork .girl {
+position: unset!important;
+}
+  .english-forWork-container{
+    flex-direction: column;
+  }
+  .english-forWork-image-container{
+  width: 100%!important;
+  }
+    .english-forWork-image-container .girl{
+        top: 0.7rem;
+
+  }
 }
 @media (min-width: 466px) and (max-width: 575.98px) {
 
