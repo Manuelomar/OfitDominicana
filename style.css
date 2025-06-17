@@ -445,7 +445,8 @@ display: none;
       min-height: 572px !important;
     }
         .english-forWork .girl {
-             top: -3.3rem!important;
+               max-width: 934px;
+        top: -15.8rem !important;
 
 
 }
