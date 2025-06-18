@@ -228,6 +228,11 @@ display: unset!important;
 .english-forWork .girl {
 position: unset!important;
 }
+.english-forWork .second-container img{
+          margin-bottom: 2rem !important;
+        margin-top: 2rem !important;
+
+}
 .english-forWork  .text-center {
       margin: 0px !important;
 }
