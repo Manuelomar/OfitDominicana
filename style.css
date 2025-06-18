@@ -214,7 +214,7 @@ display: unset!important;
 
 }
 .english-forWork-container .text-container{
-width: 100%;
+    width: 100%!important;
 
 }
 .english-forWork .girl {
@@ -231,6 +231,25 @@ position: unset!important;
     display: none;
   }
   
+  .somos-miembros h1 {
+        line-height: 1.5!important;
+
+    font-size: 3.5rem!important;  }
+     .somos-miembros h1 span {
+    font-size: 3.5rem!important;  }
+    .somos-miembros  .container .align-items-center{
+      margin-bottom: 5rem!important;
+    }
+  .somos-miembros  .container  img{
+    top: 17rem!important;
+    left: 3rem!important;
+    }
+    .procesos-linea .procesos-en-linea-second .text-center {
+      width: 100%!important;
+    }
+      .procesos-linea .procesos-en-linea-second .text-center img {
+         left: unset!important;
+    }
 }
 @media (min-width: 466px) and (max-width: 575.98px) {
 
