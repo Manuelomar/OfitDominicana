@@ -164,7 +164,7 @@ body {
   }
     .experiecia-cultura h1{
     font-size: 2.5rem!important;
-    margin-bottom: -9px!important;
+        margin-bottom: 4px !important;
 
 
   }
@@ -282,6 +282,25 @@ position: unset!important;
             font-size: 2.3rem!important;
 
       }
+
+      .trabaja-legalmente .slider-container{
+            width: 269px!important;
+    height: 458px!important;
+
+      }
+
+        .trabaja-legalmente h2{
+    font-size: 1.5rem!important;
+        }
+           .trabaja-legalmente .trabaja-legalmente-search-container{
+        width: 100%!important;
+    display: flex!important;
+    flex-direction: column!important;
+        }
+               .trabaja-legalmente input{
+        width: 100%!important;
+
+        }
 }
 @media (min-width: 466px) and (max-width: 575.98px) {
 
@@ -338,7 +357,7 @@ display: unset!important;
 
     .experiecia-cultura h5{
         font-size: 1rem;
-    margin-bottom: 13px;
+  margin-bottom: 9px;
   }
 }
 
