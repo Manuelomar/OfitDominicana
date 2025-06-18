@@ -155,6 +155,11 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+  .img-container-cloud img{
+        top: -1rem!important;
+
+    
+  }
    .experiecia-cultura h5{
         font-size: 1rem!important;
     margin-bottom: 13px;
@@ -215,17 +220,27 @@ display: unset!important;
 }
 .english-forWork-container .text-container{
     width: 100%!important;
-
+    margin: 0px !important;
+        padding: 0px;
 }
 .english-forWork .girl {
 position: unset!important;
 }
+.english-forWork  .text-center {
+      margin: 0px !important;
+}
   .english-forWork-container{
     flex-direction: column;
+  }
+  .english-forWork-container p{
+        margin: 1rem!important;
   }
  
      .english-forWork-image-responsive{
     display: flex!important;
+    position:unset!important;
+        width: 100%!important;
+
   }
   .english-forWork-image-container{
     display: none;
