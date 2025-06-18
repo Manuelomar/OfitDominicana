@@ -22,6 +22,9 @@ body {
 #main-content {
   transition: all 0.3s ease-in-out;
 }
+textarea {
+  resize: none;
+}
 .carousel-item-image {
   position: relative;
   overflow: hidden;
