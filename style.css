@@ -223,7 +223,7 @@ display: unset!important;
 .english-forWork-container .text-container{
     width: 100%!important;
     margin: 0px !important;
-        padding: 0px;
+        /* padding: 0px; */
 }
 .english-forWork .girl {
 position: unset!important;
@@ -233,6 +233,9 @@ position: unset!important;
 }
   .english-forWork-container{
     flex-direction: column;
+  }
+  .english-forWork-container {
+        --bs-gutter-x: 0rem;
   }
   .english-forWork-container p{
         margin: 1rem!important;
@@ -505,7 +508,10 @@ display: unset!important;
     text-align: center;
 }
 
-
+.english-forWork-container{
+      min-height: 422px!important;
+    max-height: 429px!important;
+}
 }
 
 /* Escritorio grande (≥1200px) */
