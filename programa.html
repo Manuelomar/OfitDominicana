@@ -508,21 +508,54 @@
          " />
         </div>
 
+  <style>
+    .input-yellow {
+      border: 2px solid #002c6c;
+      border-radius: 20px;
+      color: #002c6c;
+      padding: 10px 15px;
+    }
 
-        <div class="w-50  p-4 form-container" style="z-index: 2;">
-          <div class="bg-white rounded p-4 shadow w-100" style="min-width: 330px; max-width: 370px; margin: auto;">
-            <div class="form">
+    .input-yellow::placeholder {
+      color: #002c6c;
+      opacity: 1;
+    }
 
-              <h4 class="fw-bold text-warning mb-3">CONTACTO</h4>
-              <form>
-                <input type="text" class="form-control mb-3" placeholder="Nombre" />
-                <input type="email" class="form-control mb-3" placeholder="Email" />
-                <input type="text" class="form-control mb-3" placeholder="Asunto" />
-                <textarea class="form-control mb-3" rows="4" placeholder="Mensaje"></textarea>
-              </form>
-            </div>
-          </div>
-        </div>
+    .input-yellow:focus {
+      border-color: #002c6c;
+      box-shadow: none;
+      outline: none;
+    }
+  </style>
+
+  <!-- Contenedor blanco con encabezado azul -->
+  <div class="bg-white shadow w-100" style="min-width: 330px; max-width: 370px; margin: auto; border-radius: 16px;     z-index: 999;
+    border-top-right-radius: 16px;">
+    
+    <!-- Encabezado azul -->
+    <div style="
+      background-color: #fbc412;
+      color: white;
+      padding: 10px;
+       border-radius: 16px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 2.5rem;
+
+">
+      CONTACTO
+    </div>
+
+    <!-- Formulario -->
+    <div class="form px-4 py-4">
+      <form>
+        <input type="text" class="form-control mb-3 input-yellow" placeholder="Nombre" />
+        <input type="email" class="form-control mb-3 input-yellow" placeholder="Email" />
+        <input type="text" class="form-control mb-3 input-yellow" placeholder="Asunto" />
+        <textarea class="form-control mb-3 input-yellow" rows="4" placeholder="Mensaje"></textarea>
+      </form>
+    </div>
+  </div>
 
 
       </div>
