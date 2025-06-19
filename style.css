@@ -71,10 +71,9 @@ textarea {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
 }
 .contacto .man-image{
-          top: -16.5rem;
-}
-/* animacion */
-/* media query */
+              top: -17.3rem;
+};
+
 @media (max-width: 319.98px) {
 .contacto .position-relative .container{
   max-width: 100%;
@@ -158,6 +157,17 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+
+  .somos-miembros-inf{
+    width: 100%!important;
+
+}
+  .contacto-responsive{ 
+    display: flex!important;
+  }
+  .contacto-desktop{
+    display: none;
+  }
   .img-container-cloud img{
         top: -1rem!important;
 
@@ -359,12 +369,7 @@ position: unset!important;
         right: 81px;
 
 }
-.somos-miembros-inf{
-     position: relative;
-    top: 18rem;
-    right: 31px;
 
-}
 
 
 .programa-entrevista-foto-responsive{
@@ -413,12 +418,7 @@ display: unset!important;
     top: 18rem;
     right: 31px;
 }
-.somos-miembros-inf{
-     position: relative;
-    top: 18rem;
-    right: 31px;
 
-}
 .contacto .position-relative .container{
   max-width: 100%;
       flex-direction: column-reverse;
@@ -468,12 +468,7 @@ display: unset!important;
     top: 18rem;
     right: 31px;
 }
-.somos-miembros-inf{
-     position: relative;
-    top: 18rem;
-    right: 31px;
 
-}
 .contacto .position-relative .container{
   max-width: 100%;
       flex-direction: column-reverse;
@@ -602,5 +597,8 @@ display: none;
   }
 
   .feria-trabajo-resposnsive{
+    display: none;
+  }
+  .contacto-responsive{
     display: none;
   }
