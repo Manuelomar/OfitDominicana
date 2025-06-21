@@ -157,6 +157,21 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+  .contemos-container .text-responsive{
+        justify-content: center;
+
+  }
+   .contemos-container .text-responsive .span-number{
+          margin-left: -19rem!important;
+
+  }
+     .contemos-container .text-responsive .span-text{
+        justify-content: center;
+
+  }
+  .experiecia-cultura .resposnive-text {
+    font-size: 1.5rem!important;
+  }
   .carousel-indicators {
     bottom: -54px;
     justify-content: center;
@@ -384,7 +399,12 @@ position: unset!important;
 
 }
 
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
 
+}
 
 .programa-entrevista-foto-responsive{
 display: unset!important;
@@ -437,7 +457,12 @@ display: unset!important;
   max-width: 100%;
       flex-direction: column-reverse;
 }
+.somos-miembros-inf{
+     position: relative;
+    top: 18rem;
+    right: 31px;
 
+}
 .programa-entrevista-foto-responsive{
 display: unset!important;
     max-width: 500px;
