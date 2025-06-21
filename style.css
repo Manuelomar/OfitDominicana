@@ -157,7 +157,21 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+  .carousel-indicators {
+    bottom: -54px;
+    justify-content: center;
+    gap: 8px;
+    display: flex;
+    flex-direction: row;
+        left: 0;
 
+}
+
+
+.quienes-somos{
+      flex-direction: column-reverse!important;
+
+}
   .somos-miembros-inf{
     width: 100%!important;
 
@@ -602,3 +616,4 @@ display: none;
   .contacto-responsive{
     display: none;
   }
+  
