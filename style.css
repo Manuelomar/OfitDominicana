@@ -358,7 +358,14 @@ position: unset!important;
     text-align: center!important;
 
 }
-        .feria-trabajo .align-items-center .text-center  p span{
+
+    .feria-trabajo .align-items-center .text-center .cotejo-derecha {
+        margin-bottom: unset !important;
+        margin-left: unset!important;
+        padding: unset !important;
+    }
+
+.feria-trabajo .align-items-center .text-center  p span{
   margin-bottom: unset!important;
       margin-left: unset!important;
      }
