@@ -24,13 +24,14 @@
 
   .slide {
     position: absolute;
-    height: 420px;
+     height: 476px;
     user-select: none;
     left: 0;
     right: 0;
     margin: auto;
-    z-index: 1; /* por defecto */
-  transition: transform 0.3s ease;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    width: 437px;
   }
 
   .slide img {
