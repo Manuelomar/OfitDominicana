@@ -21,7 +21,7 @@
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="./assets/img/LogoOfit.png" alt="ofit logo" height="30" class="me-2">
-        <img src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
+        <img src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30" class="d-none d-md-block">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -84,7 +84,9 @@
 
     </div>
   </section>
-  <section class="d-flex align-items-center trabaja-legalmente" style="
+
+  <section class="d-flex align-items-center trabaja-legalmente d-none d-md-block" style="
+    justify-content: space-around;
  padding: 25px;
   background: url('./assets/img/Fondo american.png');
   background-repeat: no-repeat;
@@ -93,7 +95,7 @@
 ">
     <div class=" d-flex flex-column flex-md-row align-items-center justify-content-between text-white">
 
-<div class="slider-container" style="position: relative; width: 400px; height: 500px; margin: 60px auto;">
+<div class="slider-container" style="position: relative;     width: 470px; height: 500px; margin: 60px auto;">
 <!-- Botón IZQUIERDA -->
 <button onclick="moveLeft()" style="
   position: absolute;
@@ -117,8 +119,11 @@
 
 <!-- Slider -->
 <div class="slider">
-  <div class="slide"><img src="./assets/img/Foto atras.png" alt="1" /></div>
-  <div class="slide"><img src="./assets/img/Foto delante.png" alt="2" /></div>
+  <div class="slide">
+    <img src="./assets/img/Foto atras.png" alt="1" style=" position: relative;    bottom: 3.5rem ; left: 2.5rem; ">
+    </div>  <div class="slide">
+      <img src="./assets/img/Foto delante.png" alt="2" />
+    </div>
 </div>
 
 <!-- Botón DERECHA -->
@@ -151,13 +156,19 @@
 
       </div> -->
 
-<div class="col-md-6 text-center text-md-start order-0 order-md-1">
+<div class="col-md-6 text-center text-md-start order-0 order-md-1" style="    position: relative;
+    top: 3rem;
+    left: 2rem;
+">
   <h2 style="    font-weight: 600;
+      width: 590px;
+
     color: white;
-    font-size: 3.9rem;">
+    font-size: 3.5rem;">
     <span style="color: #fbc412;">TRABAJA</span> LEGALMENTE EN<br>ESTADOS UNIDOS
   </h2>
-  <p class="mt-3" style="font-size: 1.2rem; color: white;">DURANTE TUS VACACIONES DE VERANO</p>
+  <p class="mt-3" style="    font-size: 1.8rem;
+color: white;">DURANTE TUS VACACIONES DE VERANO</p>
 
  <div class="mt-4  trabaja-legalmente-search-container" style="position: relative; width: 75%; ">
   <span style="
@@ -194,10 +205,140 @@
     height: 42px;
     line-height: 1.5;">
 </div>
-<div class="img-container-mi-verano d-flex" style="justify-content: end;">
+<div class="img-container-mi-verano d-flex" style="    justify-content: end;
+    width: 75%;
+    /* margin-top: 1rem; */
+    position: relative;
+    top: 2rem;
+">
 
   <img src="./assets/img/Logo Verano Ofit.png " alt="" width="143px" height="auto">
 </div>
+</div>
+
+
+    </div>
+  </section>
+
+  <!-- responsive -->
+    <section class="d-flex align-items-center trabaja-legalmente d-block d-md-none" style="
+    justify-content: space-around;
+ padding: 25px;
+     flex-direction: column;
+  background: url('./assets/img/Fondo american.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+">
+<div class="img-container-mi-verano d-flex" style="    justify-content: flex-start;
+    width: 100%;">
+  
+    <img src="./assets/img/Logo Verano Ofit.png " alt="" width="103px" height="auto">
+  </div>
+    <div class=" d-flex flex-column flex-md-row align-items-center justify-content-between text-white w-100">
+
+<div class="slider-container" style="position: relative;     width: 470px;     height: 382px;    margin: 3px auto;
+">
+<button onclick="moveLeft()" style="
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+">
+  &lsaquo;
+</button>
+
+<div class="slider">
+  <div class="slide" style="width:  100%;     height: auto;"><img src="./assets/img/Foto atras.png" alt="1" style=" position: relative;      bottom: 1.5rem;
+    left: 1.5rem; ">
+    </div>  <div class="slide" style="width: 100%;     height: auto;"><img src="./assets/img/Foto delante.png" alt="2" /></div>
+</div>
+
+<button onclick="moveRight()" style="
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  cursor: pointer;
+">
+  &rsaquo;
+</button>
+
+
+</div>
+
+ 
+<div class="col-md-6 text-center text-md-start order-0 order-md-1">
+  <div class="container">
+
+    <h2 style="  
+    font-weight: 600;
+    color: white;
+    font-size: 3.5rem;
+    text-align: justify;     text-align: -webkit-center;
+">
+      <span style="color: #fbc412;">TRABAJA LEGALMENTE EN</span> <br>ESTADOS UNIDOS
+    </h2>
+    <p class="mt-3" style="    font-size: 1rem; color: white;">DURANTE TUS VACACIONES DE VERANO</p>
+  
+   <div class="mt-4  trabaja-legalmente-search-container" style="position: relative; width: 75%; ">
+    <span style="
+      position: absolute;
+      top: 50%;
+      left: 16px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      pointer-events: none;
+      display: inline-block;
+    ">
+      <img src="./assets/icons/icons8-búsqueda.svg" alt="Buscar" style="width: 100%; height: 100%;">
+    </span>
+  
+    <style>
+      .white-placeholder::placeholder {
+        color: white;
+        opacity: 1;
+      }
+    </style>
+  
+    <input type="text" 
+      class="form-control white-placeholder" 
+      placeholder="Summer work and travel program"
+      style="
+      background: transparent;
+      border: 2px solid white;
+      border-radius: 50px;
+      padding: 10px 20px 10px 48px;
+      font-size: 1rem;
+      color: white;
+      width: 80%;
+      height: 42px;
+      line-height: 1.5;">
+  </div>
+  
+  </div>
 </div>
 
 
@@ -209,68 +350,7 @@
     top: -2rem;
 " alt="">
   </div>
-  <!-- <div class="container position-relative w-100">
 
-    <img class="cloud" src="./assets/img/Division.png" style="position: absolute; width: 100%; top: -25px;" alt="">
-  </div> -->
-
-
-
-  <!-- <section class=" d-none d-md-block procesos-linea py-5 text-white" style="background-color: #002c6c;
-  background-image: url('./assets/img/proceso-en-linea/Fondo.png');
-  background-size: cover;
-  background-repeat: no-repeat;">
-    <div class="container container-procesos-linea" style="    gap: 9rem;
-    display: flex;
-    flex-direction: column;
-    
-    min-height: 551px">
-
-      <div class="row align-items-center mb-5 procesos-en-linea-firts">
-
-        <div class="w-50 text-center text-md-start mb-4 mb-md-0" data-aos="fade-up">
-          <h2 class="fw-bold mb-2" style="font-size: 3rem;">
-            ¡TODOS TUS<br>
-            <span style="color: #fbc412;">PROCESOS EN LÍNEA!</span>
-          </h2>
-          <p class="text-uppercase" style="    font-size: 1.6rem;     margin-top: -13px;
-">APP DE INTERCAMBIO CULTURAL</p>
-
-          <div class="d-flex align-items-center gap-3 justify-content-center justify-content-md-start mt-3">
-            <img src="./assets/img/proceso-en-linea/App Ofit.png" alt="icono app" style=" width: 86px;
-">
-            <a href="#" class="btn rounded-pill fw-bold px-4" style="background-color: #fbc412; color: #002c6c;">
-              Descargar App
-            </a>
-          </div>
-        </div>
-
-        <div class="w-50 text-center position-relative" data-aos="fade-up" data-aos-delay="200">
-          <img src="./assets/img/proceso-en-linea/Iphone.png" alt="App Celular"
-            class="img-fluid position-absolute translate-middle" style="    max-height: 785px;
-    top: 57px;
-    position: relative;
-    top: 7rem;">
-        </div>
-
-      </div>
-
-      <div class="row align-items-center procesos-en-linea-second">
-        <div class="w-50  text-center mb-4 mb-md-0 position-relative" data-aos="zoom-in" data-aos-delay="400">
-          <img src="./assets/img/proceso-en-linea/Imagen 2.png" alt="Firma"
-            class="img-fluid position-absolute  translate-middle" style=" position: absolute;     max-height: 728px;
-    position: absolute;
-    top: 3rem;
-    left: 20rem;     min-height: 707px; ">
-        </div>
-
-
-
-      </div>
-
-    </div>
-  </section>
-   -->
 <section class=" d-none d-md-block  procesos-linea text-white" style="background-color: #002c6c;">
 <div class="" style="padding: 0px 0px 0px 56px;">
 
