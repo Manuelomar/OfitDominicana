@@ -157,6 +157,35 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
+  .programa-entrevista .container{
+    left: 0px !important;
+  }
+  .logo-wyse{
+    display: none;
+  }
+  .internship-program {
+        flex-direction: column;
+  }
+    .internship-program h2{
+    font-size: 3rem!important;
+
+    }
+     .internship-program p{
+   
+    padding: 1px 13px!important;
+    font-size: 0.9rem!important;
+    font-weight: 500!important;
+
+    }
+    .internship-program img{
+       width: 100%;
+  }
+  .internship-program  .notas-list{
+     
+    font-size: 0.6rem!important;
+
+    width: 281px!important;
+  }
 .experiencia-text-container{
   margin-left: 0px!important;
 }

@@ -19,16 +19,16 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-2 border-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" style="gap: 3rem;" href="#">
         <img src="./assets/img/LogoOfit.png" alt="ofit logo" height="30" class="me-2">
-        <img src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
+        <img class="logo-wyse" src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto" style="  gap: 4rem;">
           <li class="nav-item"><a class="nav-link fw-bold" href="./index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="./QuienesSomos.html">Quiénes somos</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="./programa.html">Programas</a></li>
@@ -464,7 +464,60 @@
 
   </section>
 
- 
+<section class="internship-program  d-flex align-items-center  " style="background-color: #ffffff;justify-content: space-around; ">
+  <style>
+
+    .notas-list li::marker {
+      color: #fbc412;
+    }
+
+    @media (max-width: 768px) {
+      .notas-list {
+        position: static;
+        padding-top: 1rem;
+      }
+    }
+  </style>
+
+<div class="text text-center text-md-start d-flex" style="flex-direction: column; align-items: center;">
+  <h2 class="fw-bold" style="color: #fbc412; font-size: 5rem; line-height: 1;">INTERNSHIP</h2>
+  <h2 class="fw-bold" style="color: #002c6c; font-size: 5rem; line-height: 1; margin-top: -0.5rem;">PROGRAM</h2>
+  <p style="
+    display: inline-block;
+    border: 2px solid #002c6c;
+    color: #002c6c;
+    border-radius: 38px;
+    padding: 3px 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: -0.2rem;
+  ">
+    ¡Descubre por qué somos tu mejor elección!
+  </p>
+</div>
+
+  <div class="position-relative">
+    <img src="./assets/img/Papel notas.png" alt="Notas" class="img-fluid" style="max-width: 420px;">
+    <ul class="notas-list" style="     position: absolute;
+    top: 63px;
+    left: 16px;
+    right: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #002c6c;
+    font-weight: 500;
+    list-style-type: disc;
+    padding-left: 20px;
+    z-index: 10;
+    width: 334px;">
+      <li><strong>Internship Trainee program</strong> está diseñado exclusivamente para estudiantes de término o recién graduados dominicanos.</li>
+      <li>Experiencia en cadenas como Ritz-Carlton, Hyatt Regency, Marriott, Grand Hyatt, entre otros.</li>
+      <li>Adquirir un nivel de inglés especializado en tu área profesional.</li>
+      <li>Respaldo de Ofit en cada proceso.</li>
+      <li>Duración del 1 año.</li>
+    </ul>
+  </div>
+</section>
 
   <section class="contacto position-relative"
     style="background: url('./assets/img/contactato/Ofit-web_02.png') no-repeat center center; background-size: cover; min-height: 610px;">

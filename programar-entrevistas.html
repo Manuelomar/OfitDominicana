@@ -17,18 +17,18 @@
 
 <body>
 
-   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-2 border-bottom">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4 py-2 border-bottom">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class="navbar-brand d-flex align-items-center" style="gap: 3rem;" href="#">
         <img src="./assets/img/LogoOfit.png" alt="ofit logo" height="30" class="me-2">
-        <img src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
+        <img class="logo-wyse" src="./assets/img/wysetc-2022-new-logo-1.png" alt="wyse logo" height="30">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav mx-auto">
+        <ul class="navbar-nav mx-auto" style="  gap: 4rem;">
           <li class="nav-item"><a class="nav-link fw-bold" href="./index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="./QuienesSomos.html">Quiénes somos</a></li>
           <li class="nav-item"><a class="nav-link fw-bold" href="./programa.html">Programas</a></li>
@@ -56,7 +56,7 @@
     position: relative;
     overflow: hidden;
   ">
-        <div class="container position-relative z-2 d-flex flex-column align-items-center py-5">
+        <div class="container position-relative z-2 d-flex flex-column align-items-center py-5" style="left: -7rem;">
 
             <!-- Título animado -->
             <div class="mb-4 mb-md-0 text" style="width: 55%;" data-aos="fade-up" data-aos-delay="100">
@@ -124,7 +124,7 @@
 
                     <img src="./assets/img/programa-entrevistas/Formulario.png" alt="Student"
                         class="programa-entrevista-foto position-absolute end-0 bottom-0 student-image d-none d-md-block"
-                        style="width: 291px; left: 42rem; height: 521px;     right: -90px; bject-fit: contain;
+                        style="    width: 344px;left: 42rem; height: 521px;     right: -90px; bject-fit: contain;
          -webkit-mask-image: linear-gradient(to right, transparent, black 30%);
          mask-image: linear-gradient(to right, transparent, black 30%); "data-aos="fade-up"
                         data-aos-delay="500">
@@ -148,163 +148,5 @@
     </script>
 
 </body>
-<style>
-    @-webkit-keyframes animation {
-        from {
-            opacity: 0;
-            -webkit-transform: scale(1.2) rotateX(45deg);
-            transform: scale(1.2) rotateX(45deg);
-        }
-
-        to {}
-    }
-
-
-    .slider {
-        -webkit-animation: animation ease 1s;
-        animation-delay: 0.8s;
-        animation-fill-mode: backwards;
-        margin: 60px auto 0 auto;
-        height: 360px;
-        width: 240px;
-        padding: 40px;
-        perspective: 1000px;
-        transition: ease-in-out 0.2s;
-    }
-
-    .slide {
-        position: absolute;
-        height: 280px;
-        width: 240px;
-
-        user-select: none;
-    }
-
-    .slide img {
-        width: 100%;
-        height: 100%;
-        user-drag: none;
-        border-radius: 2px;
-    }
-
-    .slider div p {
-        color: #1c1c1c;
-        position: absolute;
-        bottom: -65px;
-        font-family: 'Arial', sans-serif;
-        font-size: 22px;
-    }
-
-    .transition {
-        transition: cubic-bezier(0, 1.95, .49, .73) 0.4s;
-    }
-</style>
-<script>
-
-    window.addEventListener('load', onWndLoad, false);
-
-    function onWndLoad() {
-        const slider = document.querySelector('.slider');
-        const sliders = slider.children;
-
-        let initX = null;
-        let transX = 0;
-        let rotZ = 0;
-        let transY = 0;
-        let curSlide = null;
-
-        const Z_DIS = 50;
-        const Y_DIS = 10;
-        const TRANS_DUR = 0.4;
-
-        document.querySelectorAll('img').forEach(img => {
-            img.onmousemove = e => e.preventDefault();
-            img.ondragstart = e => false;
-        });
-
-        function init() {
-            let z = 0, y = 0;
-            for (let i = sliders.length - 1; i >= 0; i--) {
-                sliders[i].style.transform = `translateZ(${z}px) translateY(${y}px)`;
-                z -= Z_DIS;
-                y += Y_DIS;
-            }
-            attachEvents(sliders[sliders.length - 1]);
-        }
-
-
-        function attachEvents(elem) {
-            curSlide = elem;
-            curSlide.addEventListener('mousedown', slideMouseDown, false);
-            curSlide.addEventListener('touchstart', slideMouseDown, false);
-        }
-
-        function slideMouseDown(e) {
-            initX = e.touches ? e.touches[0].clientX : e.pageX;
-            document.addEventListener('mousemove', slideMouseMove, false);
-            document.addEventListener('touchmove', slideMouseMove, false);
-            document.addEventListener('mouseup', slideMouseUp, false);
-            document.addEventListener('touchend', slideMouseUp, false);
-        }
-
-        function slideMouseMove(e) {
-            const mouseX = e.touches ? e.touches[0].clientX : e.pageX;
-            transX += mouseX - initX;
-            rotZ = transX / 20;
-            transY = -Math.abs(transX / 15);
-
-            curSlide.style.transition = 'none';
-            curSlide.style.transform = `translateX(${transX}px) rotateZ(${rotZ}deg) translateY(${transY}px)`;
-
-            let j = 1;
-            for (let i = sliders.length - 2; i >= 0; i--) {
-                sliders[i].style.transition = 'none';
-                sliders[i].style.transform = `translateX(${transX / (2 * j)}px) rotateZ(${rotZ / (2 * j)}deg) translateY(${Y_DIS * j}px) translateZ(${-Z_DIS * j}px)`;
-                j++;
-            }
-
-            initX = mouseX;
-            e.preventDefault();
-
-            if (Math.abs(transX) >= curSlide.offsetWidth - 30) {
-                document.removeEventListener('mousemove', slideMouseMove, false);
-                document.removeEventListener('touchmove', slideMouseMove, false);
-                curSlide.style.transition = 'ease 0.2s';
-                curSlide.style.opacity = 0;
-
-                const prevSlide = curSlide;
-                attachEvents(sliders[sliders.length - 2]);
-
-                setTimeout(() => {
-                    slider.insertBefore(prevSlide, slider.firstChild);
-                    prevSlide.style.transition = 'none';
-                    prevSlide.style.opacity = '1';
-                    slideMouseUp();
-                }, 201);
-            }
-        }
-
-        function slideMouseUp() {
-            transX = 0;
-            rotZ = 0;
-            transY = 0;
-            curSlide.style.transition = `cubic-bezier(0,1.95,.49,.73) ${TRANS_DUR}s`;
-            curSlide.style.transform = `translateX(0px) rotateZ(0deg) translateY(0px)`;
-
-            let j = 1;
-            for (let i = sliders.length - 2; i >= 0; i--) {
-                sliders[i].style.transition = `cubic-bezier(0,1.95,.49,.73) ${TRANS_DUR / (j + 0.9)}s`;
-                sliders[i].style.transform = `translateX(0px) rotateZ(0deg) translateY(${Y_DIS * j}px) translateZ(${-Z_DIS * j}px)`;
-                j++;
-            }
-
-            document.removeEventListener('mousemove', slideMouseMove, false);
-            document.removeEventListener('touchmove', slideMouseMove, false);
-        }
-
-        init();
-    }
-
-</script>
 
 </html>
