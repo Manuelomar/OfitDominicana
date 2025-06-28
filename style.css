@@ -186,6 +186,13 @@ textarea {
 
     width: 281px!important;
   }
+  .internship-program   .text {
+        margin-top: 1rem!important;
+  }
+#internshipSlider .carousel-inner  .justify-content-center .btn-warning{
+  margin-bottom: 1rem!important;
+
+  }
 .experiencia-text-container{
   margin-left: 0px!important;
 }
