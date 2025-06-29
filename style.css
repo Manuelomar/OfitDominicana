@@ -157,7 +157,13 @@ textarea {
 }
 
 @media screen and (max-width: 992px) {
-  .img-girl{
+
+     .experiecia-cultura h5{
+    letter-spacing: 0.5rem!important;
+
+
+       }
+         .img-girl{
     display: none!important;
   }
   .navbar-collapse .navbar-nav{
@@ -202,14 +208,14 @@ textarea {
 .experiencia-text-container{
   margin-left: 0px!important;
 }
- .contemos-container h2 {
+ /* .contemos-container h2 {
     font-size: 3rem;
 
- }
- .contemos-container h2 {
+ } */
+ /* .contemos-container h2 {
     font-size: 3rem!important;
 
- }
+ } */
 
   .english-forWork .second-container  .title-image img{
     margin-bottom: 3rem!important;
@@ -222,25 +228,26 @@ textarea {
 }
   .english-forWork  .english-forWork-container .text-container p{
         font-size: 1.2rem!important;
+        text-align: center!important;
 }
   .contemos-container .text-responsive{
         justify-content: center;
 
   }
-   .contemos-container .text-responsive .span-number{
+   /* .contemos-container .text-responsive .span-number{
           margin-left: -19rem!important;
     font-size: 2rem!important;
     margin-bottom: 2rem;
 
-  }
-     .contemos-container .text-responsive .span-text{
+  } */
+     /* .contemos-container .text-responsive .span-text{
             font-size: 1.5rem!important;
 
-  }
-       .contemos-container   p{
+  } */
+       /* .contemos-container   p{
             font-size: 1.2rem!important;
 
-  }
+  } */
   .experiecia-cultura .resposnive-text {
     font-size: 1.5rem!important;
   }
@@ -354,6 +361,7 @@ position: unset!important;
   }
   .english-forWork-container {
         --bs-gutter-x: 0rem;
+        height: auto!important;
   }
   .english-forWork-container p{
         margin: 0rem!important;
