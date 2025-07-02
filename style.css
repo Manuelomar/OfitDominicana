@@ -47,10 +47,10 @@ textarea {
   z-index: -9999;
 }
 .carousel-indicators {
-    bottom: 123px;
-  left: 2rem;
-  justify-content: flex-start;
-  gap: 8px;
+    bottom: 80px;
+    left: 3rem;
+    justify-content: flex-start;
+    gap: 8px;
 }
 
 .carousel-indicators [data-bs-target] {
